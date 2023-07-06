@@ -94,6 +94,14 @@ header {
 color: #fdf7e18a;
 transition: var(--smooth);
 }
+button.navbar__btn {
+    transform: scale(0.8);
+    margin-left: 0rem;
+}
+button.navbar__btn:hover {
+    background-color: white; 
+  color: var(--blue); 
+}
 .navbar__btn {
     font-size: 1rem;
     background-color: #A8E0DD;
