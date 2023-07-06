@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+    <!-- main css -->
+     <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Bouble Sould</title>
+</head>
+<body style="background-color: #FDF7E1;">
+    <!-- header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+            <!-- logo -->
+            <div class="navbar__logo"></div>
+                <!-- <img src="./img/logo.svg" alt="website logo"> -->
+            <!-- links -->
+            <ul class="navbar__links">
+                <li class="navbar__link"><a href="#M&S">
+                    <b>Music and Sound</b></a></li>
+                <li class="navbar__link"><a href="#Podcast">
+                    <b>Podcast</b></a></li>
+                <li class="navbar__link"><a href="#Mess">
+                    <b>Mess</b></a></li>
+                <li class="navbar__link"><a href="#Diary">
+                    <b>Diary</b></a></li>
+                <!-- <a href="#"><button class="navbar__btn"> <b>Let's join</b></button></a> -->
+              
+            </ul>
+            <!-- menu button -->
+                <div class="navbar__icons">
+                    <div class="navbar__icon"></div>
+                </div>
+          
+            </nav>
+        </div>
+    </header>
+    <style>
+        
+        .container {
+            position: relative;
+            /* width: 400px;
+            height: 300px; */
+        }
+    
+        .background-image {
+
+            width: 100%;
+            height: 1024px;
+            top: 0;
+            left: 0;
+            background-image: url(./img/Home.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .banner__heading {
+            position: absolute;
+            top: 45%;
+            left: 15%;
+
+        }
+        .banner__podcast {
+            position: absolute;
+            top: 120%;
+            left: 67%;
+
+        }
+        .banner__mess {
+            position: absolute;
+            top: 190%;
+            left: 15%;
+
+        }  .banner__diary {
+            position: absolute;
+            top: 268%;
+            left: 67%;
+
+        }
+        .button {
+            transform: translate(-50%, -50%);
+            padding: 10px 100px;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+    <!-- === banner === -->
+    <section id="banner">
+        <div class="container">
+            <!-- img -->
+    
+            <div class="banner__img">
+            </div>
+            <img src="./img/Menu.svg" alt="background">
+            <!-- M&S -->
+            <form action="action__page.php"></form>
+            <div class="banner__heading">
+                <h1 id="M&S">Music & Sound</h1>
+                <button class="banner__btn"  onclick="openModalForm">Let's join</button>
+                <p><b>Để con người ta có thể tĩnh lặng, yên bình trong tâm hồn. </p>
+                    <div class="modal hide" id="modal">
+                        <div class="modal-inner">
+                            <div class="modal-header1">
+                            <p> <b>Music & Sound</b></p>
+                              <i class="fa-solid fa-xmark" style="margin-top: 22px;margin-right: -45px; size: 50px;"></i>
+                            </div>
+                            <div class="modal-body">
+                                <div class="cards">
+                                    <style>
+                                        .clickable-image {
+                                            cursor: pointer;
+                                        }
+                                    </style>
+                                     <div class="card" style="cursor: pointer;" onclick="playSound()">
+                          
+                                        <img class="clickable-image" src="https://chillhop.com/wp-content/uploads/2023/05/b839fe4e2f03050732ec0aa305a10554420fb7de-1024x1024.jpg" alt="" >
+                                        
+                                        <div class="card__content1">
+                                            <h2 class="h1">Relax day</h2>                         
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                  
+                                      <div class="card">
+                                        <img src="https://f4.bcbits.com/img/a3370279009_65" alt="" />
+                                        <div class="card__content1">
+                                          <h2 class="h1">Hip Hop</h2>
+                                          
+                                        </div>
+                                      </div>
+                   
+                                    <div class="card">
+                                        <img src="https://i.iheart.com/v3/catalog/album/126030306?ops=fit(480%2C480)" alt="" />
+                                        <div class="card__content1">
+                                          <h2 class="h1">Soul music</h2>                                          
+                                        </div>
+                                      </div>
+
+                                      <div class="card">
+                                        <img src="./img/indiamusic.jpg" alt="" />
+                                        <div class="card__content1">
+                                          <h2 class="h1">Indie music</h2>                                   
+                                        </div>
+                                      </div>
+
+                                      <div class="card">
+                                        <img src="https://i.scdn.co/image/ab67706f00000002f2d08778548e125bcb867692" alt="" />
+                                        <div class="card__content1">
+                                          <h2 class="h1">Chillhop music</h2>                                
+                                        </div>
+                                      </div>
+
+                                      <div class="card">
+                                        <img src="https://i1.sndcdn.com/artworks-000422795163-i7crcm-t500x500.jpg" alt="" />
+                                        <div class="card__content1">
+                                          <h2 class="h1">Chill music</h2>
+                                        </div>
+                                      </div>
+                                </div>
+
+
+                            </div>
+                            <div class="modal-footer"></div>
+                        </div>
+                    </div>
+            </div>
+
+        
+            <!-- Podcast -->
+            <div class="banner__podcast">
+                <h1 id="Podcast">Podcast</h1>
+                <button class="podcast__btn">Let's join</button>
+                <p><b>Những câu nói truyền đồng lực, những câu chuyện có thể cậu sẽ muốn nghe. </p>
+                    <div class="modal1 hide">
+                        <div class="modal-inner1">
+                            <div class="modal-header">
+                                <p><b>Podcast</b></p>
+                                <i class="fa-solid fa-xmark" style="margin-top: 22px;margin-right: -45px; size: 50px;"></i>
+                            </div>
+                            <div class="modal-body1">
+                                <div class="cards1">
+                                    <div class="card">
+                                        <img src="https://i.scdn.co/image/ab6765630000ba8a6eb0a5050f7c3cd43cad2428" alt="" />
+                                        <div class="card__content">
+                                        <h2 class="h1" >Yên Lành</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="/img/musicard2.jpg" alt="" />
+                                        <div class="card__content">
+                                        <h2 class="h1" >Vì sao thế nhỉ</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="https://yt3.googleusercontent.com/EBbUoHshzYyN1rxBbuNX8epx3m4o3ni8TgoLGQtIakYgas8glfuvYoKqfm-9GUT-LlfaL5XT=s900-c-k-c0x00ffffff-no-rj" alt="" />
+                                        <div class="card__content">
+                                        <h2 class="h1" >Tun cảm ơn</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="https://i.scdn.co/image/ab6765630000ba8a895df44bded0a43165588994" alt="" />
+                                        <div class="card__content">
+                                        <h2 class="h1" >Monsieur Tuna fan</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="https://i0.wp.com/thepresentwriter.com/wp-content/uploads/2020/08/Podcast-Image-.png?fit=3000%2C3000&ssl=1" alt="" />
+                                        <div class="card__content">
+                                        <h2 class="h1" >The Present writter</h2>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <img src="https://i.scdn.co/image/210fc188aed15156a4b341702122cabca5caad93" alt="" />
+                                        <div class="card__content">
+                                        <h2 class="h1" >Giang Ơi Radio</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                    
+            </div>
+            <!-- Mess -->
+            <div class="banner__mess">
+                <h1 id="Mess">Mess</h1>
+                <a><button class="mess__btn">Let's join</button></a>
+                <p><b>Có thể bạn sẽ được an ủi phần nào bởi lời nói của một người xa lạ đấy!</p>
+                <div class="modal2 hide">
+                    <div class="modal-inner2">
+                        <div class="modal-header2">
+                            <p><b>Message for you</b></p>
+                            <i class="fa-solid fa-xmark" style="margin-top: 22px;margin-right: -45px; size: 50px;"></i>
+                        </div>
+                        <div class="modal-body2">
+                            <h1 class="h11">Hãy gửi lời nhắn này đến bản thân cậu vào ngày mai<br> và cùng cố gắng vì điều đó với tụi tớ nhé</h1>
+                            <form action="form-field">
+                                <div>
+                                    <input type="text" class="form__input" pattern=".{6,}" required>
+                                    <span class="icon"></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Diary -->
+            <div class="banner__diary">
+                <h1 id="Diary">Diary</h1>
+                <button class="diary__btn">Let's join</button>
+                <p> <b> Sẽ tốt hơn nếu cậu ghi lại những cảm xúc của một ngày.</b> </p>
+                    <div class="modal3 hide">
+                        <div class="modal-inner3">
+                            <div class="modal-header3">
+                                <p><b>Your diary</b></p>
+                                <i class="fa-solid fa-xmark" style="margin-top: 22px;margin-right: -45px; size: 50px;"></i>
+                            </div>
+                            <div class="modal-body3">
+                                <h1 class="h11">Hôm nay của bạn như thế nào vậy ?</h1>
+                                <form action="form-field">
+                                    <div>
+                                        <input type="text" class="form__input" pattern=".{6,}" required>
+                                        <span class="icon"></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </form>
+    </section>
+    <script> 
+        function playSound() {
+            alert('J ok');
+        var audio = new Audio('./sounds/short.mp3');
+       audio.play();
+        }
+
+        function openModalForm() {
+            var form = document.getElementById('modal');
+            form.classList.toggle('hide');
+        }
+    </script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>    
+</body>
+</html> 

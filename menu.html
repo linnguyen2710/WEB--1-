@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- google font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet"> 
+     <!-- main css -->
+      <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.css">
+     <link rel="stylesheet" href="./css/menu.css">
+     <title>Bouble Sould</title>
+     <!-- swal.fire  -->
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <style>
+        
+        .container {
+            position: relative;
+
+        }
+    
+        .background-image {
+
+            width: 100%;
+            height: 1024px;
+            top: 0;
+            left: 0;
+            background-image: url(./img/Home.svg);
+
+        }
+    
+        .button {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 60px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 1;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="background-image"></div>
+        <!-- <button id="myButton" class="button">
+            <a class="button" href="index.html">Let's start</a>
+         
+          </button> -->
+          <button id="myButton" class="button">Let's start</button>
+
+    </div>
+
+      <!-- main js -->
+      <script src="./js/menu.js"></script>    
+        
+</body>
+</html>
